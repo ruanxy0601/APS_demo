@@ -1,4 +1,4 @@
-package com.ruanxy.apsdemo.entity;
+package com.ruanxy.apsDemo.entity;
 
 /**
  * 集成mybatis练习

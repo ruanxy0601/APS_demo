@@ -1,7 +1,7 @@
-package com.ruanxy.apsdemo.service;
+package com.ruanxy.apsDemo.service;
 
-import com.ruanxy.apsdemo.dao.UserDao;
-import com.ruanxy.apsdemo.entity.User;
+import com.ruanxy.apsDemo.dao.UserDao;
+import com.ruanxy.apsDemo.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,7 @@ public class UserService {
     @Autowired
     private UserDao dao;
 
-    public List<User> findlist() {
-        return dao.findList();
+    public List<User> findlist(User user) {
+        return dao.selectList(null);
     }
 }

@@ -1,7 +1,8 @@
-package com.ruanxy.apsdemo.controller;
+package com.ruanxy.apsDemo.controller;
 
-import com.ruanxy.apsdemo.entity.User;
-import com.ruanxy.apsdemo.service.UserService;
+import com.ruanxy.apsDemo.dao.UserDao;
+import com.ruanxy.apsDemo.entity.User;
+import com.ruanxy.apsDemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,10 +20,12 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private UserDao userDao;
 
     @RequestMapping("/getUsers")
     public List<String> findList() {
-        List<User> userList = userService.findlist();
+        List<User> userList = userDao.selectList(null);
         List<String> userStringList = new ArrayList<>();
         for (User user : userList) {
             userStringList.add(user.toString());

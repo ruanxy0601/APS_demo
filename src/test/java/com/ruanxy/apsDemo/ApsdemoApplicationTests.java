@@ -1,4 +1,4 @@
-package com.ruanxy.apsdemo;
+package com.ruanxy.apsDemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

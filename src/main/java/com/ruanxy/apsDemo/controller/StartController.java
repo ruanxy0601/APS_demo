@@ -1,4 +1,4 @@
-package com.ruanxy.apsdemo.controller;
+package com.ruanxy.apsDemo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
