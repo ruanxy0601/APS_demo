@@ -1,5 +1,6 @@
 package com.ruanxy.apsDemo.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ruanxy.apsDemo.dao.UserDao;
 import com.ruanxy.apsDemo.entity.User;
 import com.ruanxy.apsDemo.service.UserService;
@@ -25,6 +26,7 @@ public class UserController {
 
     @RequestMapping("/getUsers")
     public List<String> findList() {
+        QueryWrapper queryWrapper = new QueryWrapper();
         List<User> userList = userDao.selectList(null);
         List<String> userStringList = new ArrayList<>();
         for (User user : userList) {

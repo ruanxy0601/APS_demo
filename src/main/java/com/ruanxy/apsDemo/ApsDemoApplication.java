@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.ruanxy.apsDemo.dao")
+@MapperScan("com.ruanxy.apsDemo.office")
 public class ApsDemoApplication {
 
     public static void main(String[] args) {
