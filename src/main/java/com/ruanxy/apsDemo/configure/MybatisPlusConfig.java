@@ -40,9 +40,10 @@ public class MybatisPlusConfig {
     @Bean
     public PaginationInterceptor paginationInterceptor() {
         PaginationInterceptor page = new PaginationInterceptor();
-        page.setDialectType("mysql");
+        page.setDialectType("oracle");
         return page;
     }
+
     /**
      * 这里全部使用mybatis-autoconfigure 已经自动加载的资源。不手动指定
      * 配置文件和mybatis-boot的配置文件同步

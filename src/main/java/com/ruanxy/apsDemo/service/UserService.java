@@ -15,10 +15,10 @@ import java.util.List;
 @Service
 public class UserService {
 
-    @Autowired
-    private UserDao dao;
-
-    public List<User> findlist(User user) {
-        return dao.selectList(null);
-    }
+//    @Autowired
+//    private UserDao dao;
+//
+//    public List<User> findlist(User user) {
+//        return dao.selectList(null);
+//    }
 }

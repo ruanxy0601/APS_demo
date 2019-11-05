@@ -55,11 +55,13 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/apsdemo?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
+//        dsc.setUrl("jdbc:mysql://localhost:3306/apsdemo?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
+        dsc.setUrl("jdbc:oracle:thin:@127.0.0.1:1521:orcl");
         // dsc.setSchemaName("public");
-        dsc.setDriverName("com.mysql.jdbc.Driver");
-        dsc.setUsername("root");
-        dsc.setPassword("123456");
+//        dsc.setDriverName("com.mysql.jdbc.Driver");
+        dsc.setDriverName("oracle.jdbc.driver.OracleDriver");
+        dsc.setUsername("hymes");
+        dsc.setPassword("hymes");
         mpg.setDataSource(dsc);
 
         // 包配置

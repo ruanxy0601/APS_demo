@@ -19,20 +19,21 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    @Autowired
-    private UserService userService;
-    @Autowired
-    private UserDao userDao;
-
-    @RequestMapping("/getUsers")
-    public List<String> findList() {
-        QueryWrapper queryWrapper = new QueryWrapper();
-        List<User> userList = userDao.selectList(null);
-        List<String> userStringList = new ArrayList<>();
-        for (User user : userList) {
-            userStringList.add(user.toString());
-        }
-        return userStringList;
-    }
+//    @Autowired
+//    private UserService userService;
+//    @Autowired
+//    private UserDao userDao;
+//
+//    @RequestMapping("/getUsers")
+//    public List<String> findList() {
+//        QueryWrapper queryWrapper = new QueryWrapper();
+//        List<User> userList = userDao.selectList(null);
+////        List<User> userList = userDao.findList();
+//        List<String> userStringList = new ArrayList<>();
+//        for (User user : userList) {
+//            userStringList.add(user.toString());
+//        }
+//        return userStringList;
+//    }
 
 }
